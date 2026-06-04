@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "on"
+  },
+  "editor.suggestSelection": "first",
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true
+}

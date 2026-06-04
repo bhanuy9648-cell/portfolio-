@@ -1,0 +1,239 @@
+/* -------------------------------------------------------------
+   RESPONSIVE DESIGN BREAKPOINTS
+   Bhanu Pratap Yadav | Java Full Stack Developer Portfolio
+   ------------------------------------------------------------- */
+
+/* Large Desktop screens (1200px and up) */
+@media (min-width: 1200px) {
+  .container-width {
+    padding: 0;
+  }
+}
+
+/* Tablets (1024px and below) */
+@media (max-width: 1024px) {
+  section {
+    padding: 80px 0;
+  }
+
+  .hero-content {
+    gap: 3rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 3.2rem;
+  }
+
+  .about-content {
+    gap: 2.5rem;
+  }
+}
+
+/* Medium Tablets & Large Mobiles (768px and below) */
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+
+  section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  /* Hamburger Menu implementation styles */
+  .menu-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: rgba(var(--bg-base-rgb), 0.96);
+    -webkit-backdrop-filter: var(--glass-blur);
+    backdrop-filter: var(--glass-blur);
+    border-left: 1px solid var(--border-color);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1005;
+    padding: 2rem;
+  }
+
+  .navbar-menu.active {
+    right: 0;
+  }
+
+  .navbar-menu a {
+    font-size: 1.15rem;
+  }
+
+  /* Hero adjustments */
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 3.5rem;
+    text-align: center;
+  }
+
+  .hero-copy {
+    align-items: center;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.8rem;
+  }
+
+  .hero-copy h2 {
+    justify-content: center;
+  }
+
+  .hero-contact {
+    justify-content: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-photo {
+    order: -1;
+  }
+
+  .hero-image {
+    width: 260px;
+    height: 260px;
+  }
+
+  /* About layout */
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+
+  .about-stats {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about-buttons {
+    justify-content: center;
+  }
+
+  /* Timeline adjustments */
+  .timeline-wrapper::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    padding-left: 50px;
+  }
+
+  .timeline-badge {
+    left: 4px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .timeline-date-gpa {
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 8px;
+  }
+
+  /* Contact layout */
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-form-wrapper {
+    padding: 2rem;
+  }
+
+  /* Modal layout */
+  .modal-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .modal-card {
+    padding: 2rem;
+  }
+}
+
+/* Small Mobile Screens (480px and below) */
+@media (max-width: 480px) {
+  section h2 {
+    font-size: 1.8rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-copy h2 {
+    font-size: 1.6rem;
+  }
+
+  .hero-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .timeline-panel {
+    padding: 1.5rem;
+  }
+
+  .certifications-grid,
+  .projects-grid,
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrapper {
+    padding: 1.5rem;
+  }
+
+  .modal-card {
+    padding: 1.5rem;
+  }
+
+  .modal-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Extra small devices (320px and below) */
+@media (max-width: 320px) {
+  .navbar-logo {
+    font-size: 1.3rem;
+  }
+
+  .hero-copy h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .cta-button,
+  .hero-buttons .cta-outline {
+    width: 100%;
+  }
+}
